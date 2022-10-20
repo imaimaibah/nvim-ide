@@ -13,16 +13,20 @@ else
 endif
 
 " Code completion
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+"inoremap <silent><expr> <TAB> <SID>check_back_space()
+"function! s:check_back_space() abort
+"  if pumvisible()
+"    return "\<C-n>" 
+"  else
+"    let col = col('.') - 1
+"    if !col || getline('.')[col - 1] =~# '\s'
+"      return "\<TAB>"
+"    else
+"      return coc#refresh()
+"    endif
+"  endif
+"endfunction
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1] =~# '\s'
-endfunction
 
 " Key binding used to trigger completion
 inoremap <silent><expr> <C-Space> coc#refresh()
