@@ -7,3 +7,4 @@ let NERDTreeShowHidden=1
 
 " Key binding used to open/close files tree
 nmap <M-1> :NERDTreeToggle<CR>
+nmap <leader><SPACE> :NERDTreeToggle<CR>
