@@ -12,7 +12,7 @@ syntax enable
 set hidden
 
 " Long lines not wrapped
-set nowrap
+set wrap
 
 " Default encoding
 set encoding=utf-8
@@ -46,10 +46,10 @@ set t_Co=256
 set conceallevel=0
 
 " 2 Spaces for TAB
-set tabstop=2
+set tabstop=4
 
 " 2 Spaces for indention
-set shiftwidth=2
+set shiftwidth=4
 
 " Smart TAB's
 set smarttab
