@@ -31,7 +31,7 @@ set cmdheight=2
 set iskeyword+=-
 
 " Enable mouse
-set mouse=a
+set mouse=nv
 
 " Horizontal splits on bottom
 set splitbelow
