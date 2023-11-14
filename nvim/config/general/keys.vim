@@ -2,6 +2,9 @@
 "
 " @author Maciej Bedra
 
+" Toggle number and relative number
+nmap <leader>n :set nu! rnu!<CR>
+
 " More handy insert mode exit
 inoremap jk <Esc>
 inoremap kj <Esc>
